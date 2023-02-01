@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tittle_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="P8 Map" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tittle_app"
+        android:layout_margin="10sp"
+        android:rowCount="3"
+        android:columnCount="2"
+        >
+
+        <Button
+            android:id="@+id/button_localisation"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:maxWidth="100px"
+            android:onClick="buttonClicked"
+            android:text="Où suis-je" />
+
+
+        <Button
+            android:id="@+id/button_POI"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:maxWidth="100px"
+            android:maxHeight="100px"
+            android:text="Liste des destinations"
+            android:onClick="buttonClicked"
+            />
+
+        <Button
+            android:id="@+id/button_guidance"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:maxWidth="100px"
+            android:maxHeight="100px"
+            android:text="Me guider"
+            android:onClick="buttonClicked"
+            />
+        <Button
+            android:id="@+id/button_alternative"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:maxWidth="100px"
+            android:maxHeight="100px"
+            android:text="Trouver une alternative"
+            android:onClick="buttonClicked"
+            />
+        <Button
+            android:id="@+id/button_problem"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:maxWidth="100px"
+            android:maxHeight="100px"
+            android:text="Signaler un problème"
+            android:onClick="buttonClicked"
+            />
+
+        <Button
+            android:id="@+id/button_parameters"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:maxWidth="100px"
+            android:maxHeight="100px"
+            android:text="Paramètres"
+            android:onClick="buttonClicked"
+            />
+    </GridLayout>
+
+
+</RelativeLayout>
